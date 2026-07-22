@@ -305,6 +305,14 @@
     transition:transform .5s ease;
   }
   .portfolio-item:hover .mock{transform:scale(1.08);}
+  .portfolio-item .mock.photo{
+    background-image:linear-gradient(135deg, rgba(59,130,246,0.55), rgba(30,58,138,0.65)), var(--photo);
+    background-size:cover;
+    background-position:center;
+    background-blend-mode:multiply;
+    color:transparent;
+    font-size:0;
+  }
   .portfolio-overlay{
     position:absolute;inset:0;
     background:linear-gradient(0deg, rgba(15,23,42,0.92) 0%, rgba(15,23,42,0.1) 60%);
@@ -556,11 +564,11 @@
         <div class="portfolio-overlay"><span class="cat">E-commerce</span><span class="title">Tienda Aurora</span></div>
       </div>
       <a href="../Veterinaria/index.html" target="_blank" rel="noopener" class="portfolio-item reveal">
-        <div class="mock">FirVet</div>
+        <div class="mock photo" style="--photo:url('FirVet.png')">FirVet</div>
         <div class="portfolio-overlay"><span class="cat">Veterinaria</span><span class="title">FirVet</span></div>
       </a>
       <a href="https://bogadosofia.github.io/la-torre-oscura/" target="_blank" rel="noopener" class="portfolio-item reveal">
-        <div class="mock">La Torre Oscura</div>
+        <div class="mock photo" style="--photo:url('LaTorre.png')">La Torre Oscura</div>
         <div class="portfolio-overlay"><span class="cat">Sitio web</span><span class="title">La Torre Oscura</span></div>
       </a>
     </div>
